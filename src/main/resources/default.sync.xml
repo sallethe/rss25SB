@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sync:data xmlns:sync="http://nicart.ai/jsync">
+    <sync:profile>
+        <sync:name>myProfile</sync:name>
+        <sync:src>src/test/resources/testFiles/testFolder1</sync:src>
+        <sync:dst>src/test/resources/testFiles/testFolder2</sync:dst>
+    </sync:profile>
+    <sync:record>
+        <sync:file name="src/test/resources/testFiles/testFolder1/file1.txt" lastModified="1744726065489"/>
+        <sync:folder name="src/test/resources/testFiles/testFolder1/folderA" lastModified="1744728660837">
+            <sync:file name="src/test/resources/testFiles/testFolder1/folderA/file1.txt" lastModified="1744726591891"/>
+            <sync:file name="src/test/resources/testFiles/testFolder1/folderA/file4.txt" lastModified="1744728660837"/>
+            <sync:folder name="awa" lastModified="0">
+                <!-- Empty -->
+            </sync:folder>
+        </sync:folder>
+        <sync:file name="src/test/resources/testFiles/testFolder1/file2.txt" lastModified="1744726073133"/>
+    </sync:record>
+</sync:data>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://univ.fr/rss25" xmlns="http://univ.fr/rss25"
+           elementFormDefault="qualified">
+    
+    <xs:element name="feed">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="rssTitle"/>
+                <xs:element name="pubDate" type="xs:date"/>
+                <xs:element name="copyright" type="rssTitle"/>
+                <xs:element name="link" type="xs:anyURI"/>
+                <xs:element name="item" maxOccurs="10">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="guid" type="xs:anyURI"/>
+                            <xs:element name="title" type="rssTitle"/>
+                            <xs:element name="category" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="term" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element ref="published"/>
+                            <xs:element name="image" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:attribute name="type" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="gif"/>
+                                                <xs:enumeration value="jpeg"/>
+                                                <xs:enumeration value="jpg"/>
+                                                <xs:enumeration value="bmp"/>
+                                                <xs:enumeration value="png"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="href" type="xs:anyURI" use="required"/>
+                                    <xs:attribute name="alt" type="xs:string" use="required"/>
+                                    <xs:attribute name="length" type="xs:int" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="content">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="rel" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="self"/>
+                                                        <xs:enumeration value="alternate"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="type" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="text"/>
+                                                        <xs:enumeration value="html"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="src" type="xs:anyURI" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element ref="author"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="lang" type="xs:language" use="required"/>
+            <xs:attribute name="version" type="xs:int" default="25"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="rssTitle">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="128"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="published" type="xs:date"/>
+    <xs:element name="updated" substitutionGroup="published"/>
+    
+    <xs:element name="language">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[a-z]{2,3}(-([A-Z]{2}|[0-9]{3}))?" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    
+    
+    <xs:element name="author">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="name">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="64"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="email" minOccurs="0" type="xs:string"/>
+                <!--xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="/\S*/"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element-->
+                <xs:element name="uri" type="xs:anyURI" minOccurs="0"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="contributor" substitutionGroup="author"/>
+</xs:schema>

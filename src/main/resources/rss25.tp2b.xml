@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss:feed lang="fr" version="25" xmlns:rss="http://univrouen.fr/rss25">
+  <rss:title>string</rss:title>
+  <rss:pubDate>2018-12-21</rss:pubDate>
+  <rss:copyright>string</rss:copyright>
+  <rss:link>http://www.your.edu/annos/et</rss:link>
+  <!--1 to 10 repetitions:-->
+  <rss:item>
+    <rss:guid>http://www.any.com/ventos/et</rss:guid>
+    <rss:title>string</rss:title>
+    <!--1 or more repetitions:-->
+    <rss:category term="string"/>
+    <rss:published>2017-12-19+01:00</rss:published>
+    <!--Optional:-->
+    <rss:image type="bmp" href="http://www.test.edu/tempestatesque/supplex" alt="string" length="3"/>
+    <rss:content rel="alternate" type="text" src="http://www.sample.com/iovisque/ac">string</rss:content>
+    <rss:author>
+      <rss:name>string</rss:name>
+      <!--Optional:-->
+      <rss:email>string</rss:email>
+      <!--Optional:-->
+      <rss:uri>http://www.sample.com/una/celsa</rss:uri>
+    </rss:author>
+  </rss:item>
+  <rss:item>
+    <rss:guid>http://www.any.com/ventos/et</rss:guid>
+    <rss:title>string</rss:title>
+    <!--1 or more repetitions:-->
+    <rss:category term="string"/>
+    <rss:published>2017-12-19+01:00</rss:published>
+    <!--Optional:-->
+    <rss:image type="bmp" href="http://www.test.edu/tempestatesque/supplex" alt="string" length="3"/>
+    <rss:content rel="alternate" type="text" src="http://www.sample.com/iovisque/ac">string</rss:content>
+    <rss:author>
+      <rss:name>string</rss:name>
+      <!--Optional:-->
+      <rss:email>string</rss:email>
+      <!--Optional:-->
+      <rss:uri>http://www.sample.com/una/celsa</rss:uri>
+    </rss:author>
+  </rss:item>
+  <rss:item>
+    <rss:guid>http://www.any.com/ventos/et</rss:guid>
+    <rss:title>string</rss:title>
+    <!--1 or more repetitions:-->
+    <rss:category term="string"/>
+    <rss:published>2017-12-19+01:00</rss:published>
+    <!--Optional:-->
+    <rss:image type="bmp" href="http://www.test.edu/tempestatesque/supplex" alt="string" length="3"/>
+    <rss:content rel="alternate" type="text" src="http://www.sample.com/iovisque/ac">string</rss:content>
+    <rss:author>
+      <rss:name>string</rss:name>
+      <!--Optional:-->
+      <rss:email>string</rss:email>
+      <!--Optional:-->
+      <rss:uri>http://www.sample.com/una/celsa</rss:uri>
+    </rss:author>
+  </rss:item>
+  <rss:item>
+    <rss:guid>http://www.any.com/ventos/et</rss:guid>
+    <rss:title>string</rss:title>
+    <!--1 or more repetitions:-->
+    <rss:category term="string"/>
+    <rss:published>2017-12-19+01:00</rss:published>
+    <!--Optional:-->
+    <rss:image type="bmp" href="http://www.test.edu/tempestatesque/supplex" alt="string" length="3"/>
+    <rss:content rel="alternate" type="text" src="http://www.sample.com/iovisque/ac">string</rss:content>
+    <rss:author>
+      <rss:name>string</rss:name>
+      <!--Optional:-->
+      <rss:email>string</rss:email>
+      <!--Optional:-->
+      <rss:uri>http://www.sample.com/una/celsa</rss:uri>
+    </rss:author>
+  </rss:item>
+  <rss:item>
+    <rss:guid>http://www.any.com/ventos/et</rss:guid>
+    <rss:title>string</rss:title>
+    <!--1 or more repetitions:-->
+    <rss:category term="string"/>
+    <rss:published>2017-12-19+01:00</rss:published>
+    <!--Optional:-->
+    <rss:image type="bmp" href="http://www.test.edu/tempestatesque/supplex" alt="string" length="3"/>
+    <rss:content rel="alternate" type="text" src="http://www.sample.com/iovisque/ac">string</rss:content>
+    <rss:author>
+      <rss:name>string</rss:name>
+      <!--Optional:-->
+      <rss:email>string</rss:email>
+      <!--Optional:-->
+      <rss:uri>http://www.sample.com/una/celsa</rss:uri>
+    </rss:author>
+  </rss:item>
+</rss:feed>

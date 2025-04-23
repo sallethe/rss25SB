@@ -1,0 +1,24 @@
+<rss:feed lang="string" version="25" xmlns:rss="http://univ.fr/rss25">
+  <title>string</title>
+  <pubDate>2017-12-03+01:00</pubDate>
+  <copyright>string</copyright>
+  <link>http://www.test.com/et/divum</link>
+  <!--1 to 10 repetitions:-->
+  <item>
+    <guid>http://www.my.com/ventos/hoc</guid>
+    <title>string</title>
+    <!--1 or more repetitions:-->
+    <category term="string"/>
+    <rss:published>2017-11-02</rss:published>
+    <!--Optional:-->
+    <image type="gif" href="http://www.any.org/iunonis/rapidum" alt="string" length="3"/>
+    <content rel="self" type="html" src="http://www.any.org/dare/imperio">string</content>
+    <rss:author>
+      <name>string</name>
+      <!--Optional:-->
+      <email>string</email>
+      <!--Optional:-->
+      <uri>http://www.your.org/quippe/qui</uri>
+    </rss:author>
+  </item>
+</rss:feed>
